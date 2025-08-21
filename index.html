@@ -2,11 +2,26 @@
 <html>
 <head>
 <title>Hello World</title>
+<style>
+  body {
+    background-color: #f0f8ff; /* aliceblue */
+    color: #333; /* dark gray */
+  }
+  h1 {
+    color: #4682b4; /* steelblue */
+  }
+</style>
 </head>
 <body>
 
 <h1>Hello World</h1>
-<p>This is a simple HTML file.</p>
+<p>This is a more interesting HTML file.</p>
+<p>Current date: <span id="datetime"></span></p>
+
+<script>
+  var dt = new Date();
+  document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
 
 </body>
 </html>
